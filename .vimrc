@@ -1,0 +1,2 @@
+" vimrc
+source ~/.vim/vimrc
