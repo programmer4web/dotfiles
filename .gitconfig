@@ -3,4 +3,4 @@
   ignorecase = true
   excludesfile = ~/.gitignore
 [credential]
-	helper = /run/current-system/sw/bin/git-credential-gnome-keyring
+  helper = /run/current-system/sw/bin/git-credential-gnome-keyring
