@@ -2,7 +2,7 @@ scriptencoding utf-8
 
 let g:ale_sign_error = '→'
 let g:ale_sign_warning = '→'
-
+let g:ale_pattern_options_enabled = 1
 let g:ale_fixers = {
       \ 'javascript': ['eslint'],
       \ 'html': ['eslint']
