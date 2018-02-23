@@ -7,5 +7,6 @@
     ./applications/misc/tilix.nix
     ./applications/networking/instant-messengers/skypeforlinux.nix
     ./tools/misc/tmux.nix
+    ./tools/admin/ansible/2.4.nix
   ];
 }
