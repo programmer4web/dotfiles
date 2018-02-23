@@ -95,6 +95,8 @@
     taskwarrior
     transmission_gtk
     epiphany
+    ledger
+    python27Packages.ledger-autosync
   ];
 
   users.defaultUserShell = "/run/current-system/sw/bin/fish";
