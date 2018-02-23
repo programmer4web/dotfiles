@@ -25,3 +25,9 @@ set RUBY_PATH "$HOME/.gem/ruby/2.3.0/bin"
 if test -x "$RUBY_PATH"
   set -gx PATH "$RUBY_PATH" $PATH
 end
+
+
+set MY_LOCAL_BIN "$HOME/.local/bin"
+if test -x "$MY_LOCAL_BIN"
+    set PATH "$MY_LOCAL_BIN" $PATH
+end
