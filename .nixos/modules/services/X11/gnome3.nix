@@ -1,11 +1,18 @@
 { config, lib, pkgs, ... }:
 {
   environment.systemPackages = with pkgs; [
+    # themes
     paper-gtk-theme
     paper-icon-theme
     gnome3.gnome-disk-utility
     arc-theme
     arc-icon-theme
+
+    # disk utilities
+    parted
+    gptfdisk
+    cryptsetup
+    ntfs3g
   ];
 
   services.xserver = {

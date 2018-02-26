@@ -14,5 +14,5 @@
 data.location=~/.task
 
 # Color theme (uncomment one to use)
-include /run/current-system/sw/share/doc/task/rc/solarized-dark-256.theme
+include ~/.nix-profile/share/doc/task/rc/solarized-dark-256.theme
 uda.priority.values=U,H,M,,L,T

@@ -8,7 +8,6 @@
     ../modules/services/X11/gnome3.nix 
     ../modules/virtualisation/lxc.nix
     ../modules/virtualisation/lxd.nix
-    ../modules/virtualisation/vagrant.nix
     ../modules/hardware/ssd.nix
   ];
 
@@ -52,56 +51,19 @@
     blacklistedKernelModules = ["ideapad-laptop"];
   };
 
-  environment.systemPackages = with pkgs; [
-    acl
-    p7zip
-    wget
-    gitKeyring
-    slack
-    firefox
-    chromium
-    google-chrome
-    chromedriver
-    lm_sensors
-    nodejs
-    libreoffice-fresh
-    python35Packages.mps-youtube
-    python35Packages.youtube-dl
-    python27Packages.yamllint
-    mpv
-    mplayer
-    cava
-    ruby
-    xsel
-    atom
-    parted
-    gptfdisk
-    cryptsetup
-    ntfs3g
-    tree
-    unoconv
-    atom
-    vim_plum
-    vim-vint
-    neovim
-    python27Packages.neovim
-    python36Packages.neovim
-    gitAndTools.tig
-    gitkraken
-    ag
-    ripgrep
-    keepassx-community
-    skypeforlinux
-    taskwarrior
-    transmission_gtk
-    epiphany
-    ledger
-    python27Packages.ledger-autosync
-  ];
-
   users.defaultUserShell = "/run/current-system/sw/bin/fish";
 
   environment.variables = {
     EDITOR = "vim";
   };
+  
+  environment.systemPackages = with pkgs; [
+    # common
+    acl
+    tree
+    wget
+    xsel
+    p7zip
+    lm_sensors
+  ];
 }
