@@ -1,12 +1,5 @@
 self: super: {
-  gnu-curl = super.callPackage <nixpkgs/pkgs/tools/networking/curl> rec {
-    fetchurl = super.stdenv.fetchurlBoot;
-    http2Support = true;
-    zlibSupport = true;
-    scpSupport = true;
-    gnutlsSupport = true;
-  };
-
+  
   gitkraken = super.gitkraken.overrideAttrs(oldAttrs: rec {
     version = "3.3.4";
     name    = "gitkraken-${version}";
@@ -18,7 +11,7 @@ self: super: {
 
     libPath = with self; super.stdenv.lib.makeLibraryPath [
       super.stdenv.cc.cc.lib
-      gnu-curl
+      curl
       udev
       gnutls
       xorg.libX11
