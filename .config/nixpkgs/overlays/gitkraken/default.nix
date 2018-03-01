@@ -13,7 +13,6 @@ self: super: {
       super.stdenv.cc.cc.lib
       curl
       udev
-      gnutls
       xorg.libX11
       xorg.libXext
       xorg.libXcursor
