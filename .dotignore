@@ -1,0 +1,8 @@
+*.swp
+.config/fish/functions/*
+!.config/fish/functions/dotfiles.fish
+!.config/fish/functions/codeclimate.fish
+.config/fish/completions/
+.config/fish/conf.d/
+.config/fish/fishd.*
+.config/fisherman/*
