@@ -2,7 +2,7 @@ self: super:
 
 let 
   buildEnv = self.buildEnv;
-
+  unstable = import <nixos-unstable> {};
 in {
   plumelo = with self; buildEnv {
     name  = "plumelo";
@@ -63,13 +63,13 @@ in {
       gitAndTools.tig
       git-lfs
       git-keyring
-      gitkraken
+      unstable.gitkraken
       
       # configuration management
       vagrant
       redir
       bridge-utils
-      ansible_2_4_3
+      unstable.ansible_2_4
     ];
   };
 }
