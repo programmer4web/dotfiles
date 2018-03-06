@@ -40,12 +40,3 @@ function! s:VSetSearch()
 endfunction
 vnoremap * :<C-u>call <SID>VSetSearch()<CR>//<CR><c-o>
 vnoremap # :<C-u>call <SID>VSetSearch()<CR>??<CR><c-o>
-
-map [1;5A <C-Up>
-map [1;5B <C-Down>
-map [1;5C <C-Left>
-map [1;5D <C-Right>
-map [1;2A <S-Up>
-map [1;2B <S-Down>
-map [1;2C <S-Right>
-map [1;2D <S-Left>

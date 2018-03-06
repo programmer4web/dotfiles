@@ -30,7 +30,7 @@ hi Search ctermfg=16 ctermbg=11 cterm=NONE guibg=#fed76e guifg=#000000 guisp=NON
 hi Directory ctermfg=141 ctermbg=NONE cterm=NONE guibg=NONE guifg=#ab9ff0 guisp=NONE gui=NONE
 hi Folded ctermfg=242 ctermbg=235 cterm=NONE guibg=#262626 guifg=#666666 guisp=NONE gui=NONE
 hi SignColumn ctermfg=NONE ctermbg=237 cterm=NONE guibg=#3a3a3a guifg=NONE guisp=NONE gui=NONE
-hi Normal ctermfg=231 ctermbg=235 cterm=NONE guibg=#262626 guifg=#ffffff guisp=NONE gui=NONE
+hi Normal ctermfg=250 ctermbg=235 cterm=NONE guibg=#262626 guifg=#ffffff guisp=NONE gui=NONE
 hi Boolean ctermfg=141 ctermbg=NONE cterm=NONE guibg=NONE guifg=#ab9ff0 guisp=NONE gui=NONE
 hi Character ctermfg=141 ctermbg=NONE cterm=NONE guibg=NONE guifg=#ab9ff0 guisp=NONE gui=NONE
 hi Comment ctermfg=242 ctermbg=NONE cterm=NONE guibg=NONE guifg=#666666 guisp=NONE gui=NONE

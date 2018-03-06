@@ -7,3 +7,5 @@ let g:ctrlp_map = '<c-p>'
 let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
 nnoremap <C-p> :packadd ctrlp.vim<CR>:CtrlP<CR>
 nnoremap <Bs> :packadd ctrlp.vim<CR>:CtrlPBuffer<CR>
+nnoremap <C-m> :packadd ctrlp.vim<CR>:CtrlPMRUFiles<CR>
+nnoremap <C-d> :packadd ctrlp.vim<CR>:CtrlPCurFile<CR>

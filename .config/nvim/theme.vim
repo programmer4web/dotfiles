@@ -1,2 +1,2 @@
 set background=dark
-silent! colorscheme hybrid
+silent! colorscheme monokai_pro

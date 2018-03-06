@@ -1,4 +1,18 @@
+scriptencoding utf-8
+filetype plugin indent on
+syntax on
 set shell=/bin/sh
+
+augroup MyVimrc
+  autocmd!
+augroup END
+command! -nargs=* AutoCmd autocmd MyVimrc <args>
+
+if has('vim_starting')
+  let g:startuptime = reltime()
+  AutoCmd VimEnter * let g:startuptime = reltime(g:startuptime) | redraw
+  \ | echomsg 'startuptime: ' . reltimestr(g:startuptime)
+endif
 
 runtime! options.vim
 runtime! autocmd.vim
