@@ -25,14 +25,14 @@ in {
 
       # browsers
       firefox
-      chromium
+      unstable.chromium
       google-chrome
       chromedriver
       epiphany
 
       # communication
-      slack
-      skypeforlinux
+      unstable.slack
+      unstable.skypeforlinux
 
       # accounting
       ledger
@@ -49,11 +49,11 @@ in {
       python27Packages.yamllint
 
       # langs
-      nodejs
+      nodejs-8_x 
       ruby
 
       # misc
-      keepassx-community
+      unstable.keepassx-community
       taskwarrior
       transmission_gtk
       stress
