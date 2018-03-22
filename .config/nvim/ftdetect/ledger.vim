@@ -1,1 +1,1 @@
-autocmd BufNewFile,BufRead *.ldg,*.ledger set filetype=ledger | comp ledger
+autocmd BufNewFile,BufRead *.ldg,*.ledger set filetype=ledger

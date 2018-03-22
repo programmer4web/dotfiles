@@ -16,7 +16,7 @@ endif
 
 runtime! options.vim
 runtime! autocmd.vim
-" source ~/.vim/commands.vim
+runtime! commands.vim
 runtime! mappings.vim
 runtime theme.vim
 

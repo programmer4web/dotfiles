@@ -4,7 +4,7 @@ filetype plugin indent on
 set autoread
 set number
 set mouse=a
-set cursorline
+" set cursorline
 set noswapfile
 set shortmess+=I
 set hidden
@@ -36,4 +36,5 @@ set wildignore+=*/node_modules/*,*/vendor/*,*/bower_components/*
 set clipboard^=unnamedplus,unnamed
 set list listchars=tab:▸\ ,eol:¬,trail:~,space:·,extends:>,precedes:<,nbsp:•
 set laststatus=2
-set statusline=%<\ %f\ %r%h%w%y%m%=%4v\ %l/%L
+" set statusline=%<\ %f\ %r%h%w%y%m%=%4v\ %l/%L
+set statusline=%f%m%r%h%w%=(%{&ff}/%Y)\ (line\ %l\/%L,\ col\ %c)

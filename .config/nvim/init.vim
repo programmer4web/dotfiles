@@ -1,7 +1,10 @@
 scriptencoding utf-8
 filetype plugin indent on
 syntax on
-set shell=/bin/sh
+
+if &shell =~# 'fish$'
+  set shell=sh
+endif
 
 augroup MyVimrc
   autocmd!
@@ -17,7 +20,7 @@ endif
 runtime! options.vim
 runtime! autocmd.vim
 runtime! mappings.vim
-runtime theme.vim
+runtime! theme.vim
 
 for s:f in glob('$HOME/.config/nvim/p-*.vim', 0, 1)
   execute 'source ' . s:f

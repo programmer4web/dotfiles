@@ -10,8 +10,7 @@ let g:ale_fixers = {
 let g:ale_fix_on_save = 1
 let g:ale_linters = {
       \ 'javascript': ['eslint'],
-      \ 'html': ['eslint'],
-      \ 'yaml': ['yamllint'],
+      \ 'yaml': ['yamllint']
       \}
 let g:ale_linter_aliases = {
       \ 'html': 'javascript',

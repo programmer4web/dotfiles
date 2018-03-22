@@ -30,7 +30,7 @@ hi Search ctermfg=16 ctermbg=11 cterm=NONE guibg=#fed76e guifg=#000000 guisp=NON
 hi Directory ctermfg=141 ctermbg=NONE cterm=NONE guibg=NONE guifg=#ab9ff0 guisp=NONE gui=NONE
 hi Folded ctermfg=242 ctermbg=235 cterm=NONE guibg=#262626 guifg=#666666 guisp=NONE gui=NONE
 hi SignColumn ctermfg=NONE ctermbg=237 cterm=NONE guibg=#3a3a3a guifg=NONE guisp=NONE gui=NONE
-hi Normal ctermfg=250 ctermbg=235 cterm=NONE guibg=#262626 guifg=#ffffff guisp=NONE gui=NONE
+hi Normal ctermfg=250 ctermbg=235 cterm=NONE guibg=#262626 guifg=#abb2bf guisp=NONE gui=NONE
 hi Boolean ctermfg=141 ctermbg=NONE cterm=NONE guibg=NONE guifg=#ab9ff0 guisp=NONE gui=NONE
 hi Character ctermfg=141 ctermbg=NONE cterm=NONE guibg=NONE guifg=#ab9ff0 guisp=NONE gui=NONE
 hi Comment ctermfg=242 ctermbg=NONE cterm=NONE guibg=NONE guifg=#666666 guisp=NONE gui=NONE
@@ -48,7 +48,7 @@ hi Function ctermfg=81 ctermbg=NONE cterm=NONE guibg=NONE guifg=#7cdce7 guisp=NO
 hi Identifier ctermfg=81 ctermbg=NONE cterm=NONE guibg=NONE guifg=#7cdce7 guisp=NONE gui=NONE
 hi Keyword ctermfg=204 ctermbg=NONE cterm=NONE guibg=NONE guifg=#fd6389 guisp=NONE gui=NONE
 hi Label ctermfg=204 ctermbg=NONE cterm=NONE guibg=NONE guifg=#fd6389 guisp=NONE gui=NONE
-hi NonText ctermfg=59 ctermbg=NONE cterm=NONE guibg=#262626 guifg=#5f5f5f guisp=NONE gui=NONE
+hi NonText ctermfg=59 ctermbg=NONE cterm=NONE guibg=NONE guifg=#5f5f5f guisp=NONE gui=NONE
 hi Number ctermfg=141 ctermbg=NONE cterm=NONE guibg=NONE guifg=#ab9ff0 guisp=NONE gui=NONE
 hi Operator ctermfg=204 ctermbg=NONE cterm=NONE guibg=NONE guifg=#fd6389 guisp=NONE gui=NONE
 hi PreProc ctermfg=155 ctermbg=NONE cterm=NONE guibg=NONE guifg=#aadb7b guisp=NONE gui=NONE
@@ -108,4 +108,3 @@ hi cssClassName ctermfg=155 ctermbg=NONE cterm=NONE guibg=NONE guifg=#aadb7b gui
 hi cssValueLength ctermfg=141 ctermbg=NONE cterm=NONE guibg=NONE guifg=#ab9ff0 guisp=NONE gui=NONE
 hi cssCommonAttr ctermfg=81 ctermbg=NONE cterm=NONE guibg=NONE guifg=#7cdce7 guisp=NONE gui=NONE
 hi cssBraces ctermfg=NONE ctermbg=NONE cterm=NONE guibg=NONE guifg=NONE guisp=NONE gui=NONE
-

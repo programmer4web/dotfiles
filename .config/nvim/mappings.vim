@@ -17,8 +17,10 @@ nnoremap L $
 vnoremap L g_
 nnoremap <silent> <Tab>      :wincmd w<CR>
 nnoremap <silent> <S-Tab>      :wincmd W<CR>
-nnoremap <silent> <C-Up> :vertical resize +1<CR>
-nnoremap <silent> <C-Down> :vertical resize -1<CR>
+nnoremap <silent> <C-Up> : resize -1<CR>
+nnoremap <silent> <C-Down> : resize +1<CR>
+nnoremap <silent> <C-Left> :vertical resize +1<CR>
+nnoremap <silent> <C-Right> :vertical resize -1<CR>
 vnoremap . :normal .<CR>
 nnoremap ,w :set wrap!<cr>
 nnoremap <Leader>w :%s/\s\+$//e<CR>
@@ -28,6 +30,16 @@ inoremap <C-a> <Home>
 inoremap <C-e> <End>
 nnoremap <Leader>s :%s//<left>
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+nnoremap <silent> gh :tabprev<cr>
+nnoremap <silent> gl :tabnext<cr>
+nnoremap <silent> gH :exec 'tabmove ' . max([tabpagenr() - 2, 0])<cr>
+nnoremap <silent> gL :exec 'tabmove ' . min([tabpagenr(), tabpagenr('$')])<cr>
+nnoremap <silent> g0 :tabfirst<cr>
+nnoremap <silent> g$ :tablast<cr>
 
 nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>:redraw<CR>
 command! -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
