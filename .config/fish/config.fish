@@ -4,8 +4,9 @@ if not test -e ~/.config/fish/functions/fisher.fish
   echo "Installing fisher plugins"
   fisher
 end
+
 set -g theme_nerd_fonts yes
-set -g theme_color_scheme solarized-dark
+set -g theme_color_scheme base16-dark
 
 function _dircolors_set_256_color
   if command -s dircolors > /dev/null; and test -e ~/.dircolors.256
@@ -26,8 +27,9 @@ if test -x "$RUBY_PATH"
   set -gx PATH "$RUBY_PATH" $PATH
 end
 
-
 set MY_LOCAL_BIN "$HOME/.local/bin"
 if test -x "$MY_LOCAL_BIN"
     set PATH "$MY_LOCAL_BIN" $PATH
 end
+
+set -g EDITOR nvim
