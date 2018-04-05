@@ -63,10 +63,10 @@ in {
       gitAndTools.tig
       git-lfs
       git-keyring
-      unstable.gitkraken
+      gitkraken_latest
       
       # configuration management
-      vagrant
+      unstable.vagrant
       redir
       bridge-utils
       unstable.ansible_2_4
