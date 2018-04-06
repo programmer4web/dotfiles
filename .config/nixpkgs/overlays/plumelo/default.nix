@@ -36,8 +36,7 @@ in {
 
       # accounting
       ledger
-      python27Packages.ledger-autosync
-        
+
       # editors
       atom
       editorconfig-core-c
