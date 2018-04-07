@@ -65,7 +65,7 @@ in {
       gitkraken_latest
       
       # configuration management
-      unstable.vagrant
+      vagrant_2
       redir
       bridge-utils
       unstable.ansible_2_4
