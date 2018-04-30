@@ -3,6 +3,7 @@ self: super:
 let 
   buildEnv = self.buildEnv;
   unstable = import <nixos-unstable> {};
+  native = self.plumNative;
 in {
   plumelo = with self; buildEnv {
     name  = "plumelo";
@@ -39,17 +40,17 @@ in {
 
       # editors
       atom
-      editorconfig-core-c
-      vim_plum
+      (native editorconfig-core-c)
+      (native vim_plum)
       vim-vint
-      neovim
+      unstable.neovim
       python27Packages.neovim
       python36Packages.neovim
       python27Packages.yamllint
 
       # langs
-      nodejs-8_x 
-      ruby
+      (native nodejs-8_x) 
+      (native ruby)
 
       # misc
       unstable.keepassx-community
@@ -61,7 +62,7 @@ in {
       # git
       gitAndTools.tig
       git-lfs
-      git-keyring
+      (native git-keyring)
       gitkraken_latest
       
       # configuration management
