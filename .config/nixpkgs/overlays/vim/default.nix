@@ -1,9 +1,9 @@
 self: super:
 {
-  vim_plum = super.vim_configurable.merge rec {
+  vim_plum = with super; vim_configurable.merge rec {
     name  = "vim_configurable-${version}";
     version = "8.0.1527";
-    src = super.fetchFromGitHub {
+    src = fetchFromGitHub {
       owner = "vim";
       repo = "vim";
       rev = "v${version}";

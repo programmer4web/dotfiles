@@ -2,7 +2,6 @@ self: super:
 
 let 
   buildEnv = self.buildEnv;
-  unstable = import <nixos-unstable> {};
   native = self.plumNative;
 in {
   plumelo = with self; buildEnv {
@@ -26,14 +25,14 @@ in {
 
       # browsers
       firefox
-      unstable.chromium
+      chromium
       google-chrome
       chromedriver
       epiphany
 
       # communication
-      unstable.slack
-      unstable.skypeforlinux
+      slack
+      skypeforlinux
 
       # accounting
       ledger
@@ -43,7 +42,7 @@ in {
       (native editorconfig-core-c)
       (native vim_plum)
       vim-vint
-      unstable.neovim
+      neovim
       python27Packages.neovim
       python36Packages.neovim
       python27Packages.yamllint
@@ -53,7 +52,7 @@ in {
       (native ruby)
 
       # misc
-      unstable.keepassx-community
+      keepassx-community
       taskwarrior
       transmission_gtk
       stress
@@ -69,7 +68,7 @@ in {
       vagrant_2
       redir
       bridge-utils
-      unstable.ansible_2_4
+      ansible_2_4
     ];
   };
 }

@@ -1,5 +1,5 @@
 self: super: {
-  git-keyring = super.git.overrideAttrs(old: rec {
+  git-keyring = with super; git.overrideAttrs(old: rec {
     postBuild = ''
       pushd $PWD/contrib/credential/gnome-keyring/
       make
@@ -11,6 +11,6 @@ self: super: {
       mv $PWD/contrib/credential/gnome-keyring/git-credential-gnome-keyring $out/bin
     '';
     buildInputs = old.buildInputs ++ [self.glib self.gnome3.libgnome_keyring];
-    nativeBuildInputs = [ self.pkgconfig ];
+    nativeBuildInputs = old.nativeBuildInputs ++ [ self.pkgconfig ];
   });
 }
