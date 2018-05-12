@@ -69,6 +69,7 @@ in {
       redir
       bridge-utils
       ansible_2_4
+      avocode
     ];
   };
 }
