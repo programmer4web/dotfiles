@@ -62,8 +62,8 @@ in {
       gitAndTools.tig
       git-lfs
       (native git-keyring)
-      gitkraken_latest
       
+      gitkraken
       # configuration management
       vagrant_2
       redir
