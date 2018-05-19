@@ -70,6 +70,7 @@ in {
       bridge-utils
       ansible_2_4
       avocode
+      distrobuilder
     ];
   };
 }
