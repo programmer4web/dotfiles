@@ -1,5 +1,9 @@
 *.swp
 *.tmp
+*.viminfo
+
+#Self
+/.dotfiles/
 
 # Fish
 .config/fish/functions/*
@@ -27,7 +31,11 @@
 
 #Misc
 .v8flags.*
+.ICEauthority
+.esd_auth
+/.pki/
 /.cache/
+/.compose-cache/
 /.local/share/*
 
 #Nix
@@ -49,3 +57,6 @@
 
 #Provision
 /.vagrant.d/
+
+# dconf
+/.config/dconf/user
