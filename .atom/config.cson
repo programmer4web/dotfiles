@@ -2,21 +2,29 @@
   "atom-easy-jsdoc":
     useReturns: true
   core:
-    autoHideMenuBar: true
     disabledPackages: [
       "whitespace"
+      "wrap-guide"
     ]
+    openEmptyEditorOnStart: false
     telemetryConsent: "limited"
+    warnOnLargeFileLimit: 35
   editor:
-    fontSize: 12
     showInvisibles: true
+    zoomFontWhenCtrlScrolling: false
   "exception-reporting":
     userId: "bd4b81db-758c-4626-8e1a-3680dee39ccf"
+  linter:
+    lintOnChange: false
+    lintPreviewTabs: false
   "linter-eslint":
     fixOnSave: true
+    ignoreFixableRulesWhileTyping: true
     lintHtmlFiles: true
-  "linter-scss-lint":
-    executablePath: "~/.gem/ruby/2.3.0/bin/scss-lint"
+    rulesToDisableWhileFixing: [
+      "no-debugger"
+    ]
+  "linter-scss-lint": {}
   "linter-ui-default": {}
   welcome:
     showOnStartup: false
