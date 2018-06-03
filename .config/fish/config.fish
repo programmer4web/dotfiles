@@ -32,4 +32,4 @@ if test -x "$MY_LOCAL_BIN"
     set PATH "$MY_LOCAL_BIN" $PATH
 end
 
-set -g EDITOR nvim
+set -gx EDITOR nvim
