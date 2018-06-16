@@ -1,6 +1,7 @@
 # Settings
-#set author-display = email-user
-#set date-display = relative-compact
+set main-view-author-display = email-user
+set main-view-date-display = relative
+
 # Bindings
 bind main B !git rebase -i %(commit)
 bind status P !git push origin
