@@ -62,8 +62,8 @@ in {
       gitAndTools.tig
       git-lfs
       (native git-keyring)
-      
       gitkraken
+
       # configuration management
       vagrant_2
       redir
@@ -71,6 +71,9 @@ in {
       ansible_2_4
       avocode
       distrobuilder
+
+      #files
+      ranger
     ];
   };
 }
