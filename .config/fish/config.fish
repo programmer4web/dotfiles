@@ -33,3 +33,12 @@ if test -x "$MY_LOCAL_BIN"
 end
 
 set -gx EDITOR nvim
+set -gx LAUNCHPAD_CHROME ~/.nix-profile/bin/google-chrome-stable
+
+function npm_link_chromedriver
+  set -lx chromedriver_path (find "$PWD/node_modules" -path '**/chromedriver/*-chromedriver')
+  if test -e $chromedriver_path
+    echo "Linking chromedriver in $chromedriver_path"
+    ln -sfn ~/.nix-profile/bin/chromedriver "$chromedriver_path"
+  end
+end
