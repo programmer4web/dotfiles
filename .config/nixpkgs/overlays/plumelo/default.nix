@@ -33,6 +33,14 @@ in {
       # communication
       slack
       skypeforlinux
+      libnotify
+      (weechat.override {configure = {availablePlugins, ...}: {
+        plugins = with availablePlugins; [
+          (python.withPackages (ps: with ps; [ 
+            websocket_client
+          ]))
+        ];};
+      })
 
       # accounting
       ledger
