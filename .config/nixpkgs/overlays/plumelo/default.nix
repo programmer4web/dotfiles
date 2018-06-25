@@ -11,6 +11,8 @@ in {
       ag
       ripgrep
       p7zip
+      unrar
+      gnumake
 
       # audio
       python35Packages.mps-youtube
@@ -73,7 +75,7 @@ in {
       gitkraken
 
       # configuration management
-      vagrant_2
+      vagrant
       redir
       bridge-utils
       ansible_2_4

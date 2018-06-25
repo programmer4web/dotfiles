@@ -21,7 +21,7 @@ if test -x "$NPM_PACKAGES/bin"
     set PATH "$NPM_PACKAGES/bin" $PATH
 end
 
-set RUBY_PATH "$HOME/.gem/ruby/2.3.0/bin"
+set RUBY_PATH "$HOME/.gem/ruby/2.4.0/bin"
 
 if test -x "$RUBY_PATH"
   set -gx PATH "$RUBY_PATH" $PATH
